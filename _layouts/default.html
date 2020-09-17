@@ -59,7 +59,7 @@ ga('send', 'pageview');
         <li>
             {{item.svg}}
         <a href="{{ site.baseurl }}{{item.url}}" style="color: #{{item.color}}">{{ item.title}} 
-                <span class="badge badge-primary">{{ item.badge }}</span> 
+                <span class="badge" style="background-color: #{{item.color}};color: #fff;border-radius: 10px;">{{ item.badge }}</span> 
                 <span class="menu-subheading">{{item.subheading}}</span>
             </a>
         </li>
