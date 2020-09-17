@@ -36,11 +36,20 @@ title: Home
 <span class="index-subheading">Sponcered by Amazon India.</span>
 <div class="blog-grid-container owl-carousel owl-theme book-section">
     {% for book in site.books limit:5 %}
-        <div class="book" style="background-image: url({{book.image}});">
-            <span class="book-title">{{book.title}}</span>
-            <span class="actual-price"><s>₹{{book.actual-price}}</s></span>
-            <a class="amzn-buy" href="{{book.link}}">Buy @ ₹{{book.price}}</a>
-        </div>
+    {% include amzn-book.html %}
     {% endfor %}
 </div>
 
+<!-- Categories
+================================================== -->
+<span class="index-heading">Categories</span>
+<span class="index-subheading">Explore our categories for awesome contents.</span>
+<div class="blog-grid-container owl-carousel owl-theme category-section">
+    {% for category in site.category %}
+    <div class="category-index" style="background: #{{category.bg_color}};color: #{{category.color}};">
+        <span class="category-name">
+            {{category.display_name}}
+        </span>
+    </div>
+    {% endfor %}
+</div>

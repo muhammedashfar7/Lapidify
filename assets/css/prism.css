@@ -589,6 +589,17 @@ a.amzn-buy:hover {
 	font-weight: 600;
 }
 
+.category-index {
+    padding: 30px 10px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.category-name {
+    font-weight: 900;
+    font-size: 19px;
+}
+
 /* Responcive */
 @media (min-width: 1000px) {
 	.h-index {
@@ -628,7 +639,7 @@ a.amzn-buy:hover {
 	}
 	.index-subheading {
 		display: block;
-		line-height: 1.5px;
+		line-height: 10px;
 		color: #858585;
 		font-size: 13px;
 	}
@@ -638,7 +649,17 @@ a.amzn-buy:hover {
 	.amzn-buy {
 		font-size: 13px;
 	}
+	.category-name{
+		font-size: 17px;
+	}
 }
+
+@media (max-width: 400px) {
+	.category-name {
+		font-size: 13px;
+	}
+}
+
 @media (max-width: 420px) {
 	#menu li:hover {
 		width: calc(100vw - 60px);
