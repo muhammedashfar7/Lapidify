@@ -33,6 +33,14 @@ title: Home
     </svg>
     </a>
 </span>
-<span class="index-subheading">Here some books for you to read.</span>
-
+<span class="index-subheading">Sponcered by Amazon India.</span>
+<div class="blog-grid-container owl-carousel owl-theme book-section">
+    {% for book in site.books limit:5 %}
+        <div class="book" style="background-image: url({{book.image}});">
+            <span class="book-title">{{book.title}}</span>
+            <span class="actual-price"><s>₹{{book.actual-price}}</s></span>
+            <a class="amzn-buy" href="{{book.link}}">Buy @ ₹{{book.price}}</a>
+        </div>
+    {% endfor %}
+</div>
 

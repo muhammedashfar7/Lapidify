@@ -534,6 +534,61 @@ pre > code.diff-highlight .token.inserted:not(.prefix) {
     font-weight: bold;
 }
 
+.book {
+    height: 290px;
+    width: 100%;
+    border-radius: 10px;
+	background-size: cover;
+	background-position: center;
+}
+
+.book-title {
+    position: absolute;
+    bottom: 45px;
+    left: 6px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #212529;
+    background: #50505033;
+    right: 6px;
+    padding: 0px 5px;
+    border-radius: 10px;
+}
+
+.amzn-buy {
+	position: absolute;
+	left: 5px;
+	bottom: 5px;
+	right: 5px;
+	background: linear-gradient(320deg, rgba(34,46,62,1) 0%, rgba(6,28,57,1) 100%);
+	border-radius: 10px;
+	padding: 5px 10px;
+	text-align: center;
+}
+a.amzn-buy {
+	text-decoration: none;
+	color: #ededed;
+	font-weight: 800;
+}
+.amzn-buy:hover{
+	box-shadow: inset 2px 2px 5px #1f2a56, inset -3px -3px 7px #142c4a;
+}
+a.amzn-buy:hover {
+	text-decoration: none;
+	color: #ffbf54;
+}
+.actual-price {
+    left: 5px;
+    position: absolute;
+    background: linear-gradient(320deg, rgba(255,105,40,1) 0%, rgba(255,16,81,1) 100%);
+    top: 5px;
+    padding: 0px 10px;
+    border-radius: 10px;
+	font-size: 13px;
+	color: #fff;
+	font-weight: 600;
+}
+
 /* Responcive */
 @media (min-width: 1000px) {
 	.h-index {
@@ -577,6 +632,12 @@ pre > code.diff-highlight .token.inserted:not(.prefix) {
 		color: #858585;
 		font-size: 13px;
 	}
+	.book {
+		height: 230px;
+	}
+	.amzn-buy {
+		font-size: 13px;
+	}
 }
 @media (max-width: 420px) {
 	#menu li:hover {
@@ -590,5 +651,27 @@ pre > code.diff-highlight .token.inserted:not(.prefix) {
 	}
 	.logo-box {
 		top: 13px;
+	}
+}
+
+@media (max-width: 390px) {
+	.book {
+		height: 200px;
+	}
+	.book-title {
+		font-size: 12px;
+		bottom: 40px;
+	}
+	.amzn-buy {
+		font-size: 12px;
+	}
+	.actual-price {
+		font-size: 10px;
+	}
+}
+
+@media (max-width: 338px) {
+	.book {
+		height: 180px;
 	}
 }

@@ -35,6 +35,8 @@ collections:
     output: true
   category:
     output: true
+  books:
+    output: true
 jekyll-archives:
   enabled:
     - categories
