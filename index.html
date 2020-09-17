@@ -1,0 +1,38 @@
+---
+layout: default
+title: Home
+---
+
+<!-- Recent Posts
+================================================== -->
+<span class="index-heading">Recent Posts</span>
+<span class="more-icon">
+    <a href="{{site.baseurl}}/blog">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
+        <line x1="5" y1="12" x2="19" y2="12"></line>
+        <polyline points="12 5 19 12 12 19"></polyline>
+    </svg>
+    </a>
+</span>
+<span class="index-subheading">Collection of mixed contents</span>
+
+<div class="blog-grid-container owl-carousel owl-theme index-page">
+    {% for post in site.posts limit:5 %}
+        {% include postbox-index.html %}
+    {% endfor %}
+</div>
+
+<!-- Recommended Books
+================================================== -->
+<span class="index-heading">Suggested Books</span>
+<span class="more-icon">
+    <a href="{{site.baseurl}}/blog">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
+        <line x1="5" y1="12" x2="19" y2="12"></line>
+        <polyline points="12 5 19 12 12 19"></polyline>
+    </svg>
+    </a>
+</span>
+<span class="index-subheading">Here some books for you to read.</span>
+
+

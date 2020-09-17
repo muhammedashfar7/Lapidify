@@ -1,0 +1,23 @@
+---
+layout: default
+title: Home
+---
+
+<!-- Posts Index
+================================================== -->
+<span class="index-heading">Blog Posts</span>
+<span class="index-subheading">Collection of best contents for you.</span>
+<div class="blog-grid-container">
+    {% for post in paginator.posts %}
+        {% include postbox.html %}
+    {% endfor %}
+</div>
+
+<!-- Pagination
+================================================== -->
+<div class="bottompagination">
+<span class="navigation" role="navigation">
+    {% include pagination.html %}
+</span>
+</div>
+
