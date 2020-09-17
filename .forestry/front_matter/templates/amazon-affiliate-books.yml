@@ -1,0 +1,22 @@
+---
+label: Amazon Affiliate Books
+hide_body: true
+fields:
+- type: text
+  name: identify
+  label: identify
+- type: text
+  name: title
+  label: title
+- type: number
+  name: actual-price
+  label: actual-price
+- type: number
+  name: price
+  label: price
+- type: file
+  name: image
+  label: image
+- type: text
+  name: link
+  label: link
