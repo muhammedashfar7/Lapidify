@@ -26,5 +26,11 @@ Before start writing you should check that your profile is created in author tab
 3. Before adding your details please read the following usage of strings.
    * **Shortname :** Enter your name or nickname in small letters. This field is used to identify your profile in the post.
    * **Display Name :** Enter the name you want to see on our site.
-   * **Avatar :** Upload your profile photo.
-   * 
+   * **Avatar :** Upload your profile photo. _(optional)_
+   * **Gravatar ID :** Enter your gravatar ID. _(optional)_
+   * **E-mail :** Enter your E-mail. _(optional)_
+   * **Instagram :** Enter your Instagram username. _(optional)_
+   * **Website :** Enter your Website URL _(optional)_
+   * **Twitter Link :** Enter your Twitter profile link. _(optional)_
+   * **About you :** Enter your bio. _(optional)_
+4. **Save your profile**. For saving see [saving guide](#saving-guide "saving guide").
