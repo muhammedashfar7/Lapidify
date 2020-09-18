@@ -5,12 +5,35 @@ fields:
 - type: text
   name: name
   label: name
+  config:
+    required: true
+  description: Category <strong>name</strong>. This name is used as a <strong>identifier</strong>.
 - type: text
   name: display_name
   label: display_name
+  description: This the name of the <strong>category </strong>should <strong>displayed
+    on the website</strong>.
+  config:
+    required: true
 - type: text
   name: bg_color
   label: bg_color
+  description: Background color of the <strong>post </strong>in category.
+  config:
+    required: true
 - type: text
   name: color
   label: color
+  description: Color of the <strong>text</strong> and <strong>tag</strong>.
+  config:
+    required: true
+- name: body
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: body
+  description: "<strong>About </strong>the category."
