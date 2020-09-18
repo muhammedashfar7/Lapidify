@@ -45,3 +45,13 @@ fields:
     required: false
   label: Permalink
   description: Add your <strong>permalink </strong>of the page.
+- name: body
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: body
+  description: Add your text here.
