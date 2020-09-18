@@ -6,6 +6,36 @@ publish_mode: editorial_workflow
 
 media_folder: "assets/images"
 collections:
+  - label: "Category"
+    name: "category"
+    folder: "_category"
+    create: false
+    identifier_field: "name"
+    slug: "{{slug}}"
+    editor:
+      preview: false
+      delete: false
+    fields:
+      - label: "Identifier Name"
+        name: "name"
+        widget: "string"
+        required: true
+        hint: "Ex: john (Use samll letters)"
+      - label: "Display Name"
+        name: "display_name"
+        widget: "string"
+        required: true
+        hint: "Ex: John Doe"e
+      - label: "Background color"
+        name: "bg_color"
+        widget: "string"
+        required: true
+        hint: "Ex: ff63ff"
+      - label: "Text Color"
+        name: "color"
+        widget: "string"
+        required: true
+        hint: "Ex: ff63ff"
   - label: "Authors"
     name: "authors"
     folder: "_authors"
@@ -46,6 +76,11 @@ collections:
         widget: "string"
         required: false
         hint: "Ex: johdoe.me"
+      - label: "Instagram"
+        name: "insta"
+        widget: "string"
+        required: false
+        hint: "Instagram username."
       - label: "Twitter Link"
         name: "twitter"
         widget: "string"
@@ -60,7 +95,9 @@ collections:
     folder: "_posts"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    preview_path: "{{title}}"
+    editor:
+      preview: false
+      delete: false
     extension: "md"
     fields:
       - label: "Publish Date"
@@ -84,10 +121,14 @@ collections:
         valueField: "name"
         required: true
         hint: "Ex: John Doe"
-      - label: "Categories"
-        name: "categories"
-        widget: "list"
-        hint: "Each category is separated with comma."
+      - label: "Category"
+        name: "category"
+        widget: "relation"
+        collection: "category"
+        searchFields: [display_name]
+        displayFields: [display_name]
+        valueField: "name"
+        required: true
       - label: "Tags"
         name: "tags"
         widget: "list"

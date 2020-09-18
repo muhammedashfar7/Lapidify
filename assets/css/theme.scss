@@ -210,7 +210,6 @@ img, img:hover {
         }
         li {
             list-style: none;
-            width: 100%;
             padding: 10px;
             a {
                 width: 100%;
@@ -229,6 +228,11 @@ img, img:hover {
     background: #f8f8f8;
     padding: 10px;
     border-radius: 10px;
+}
+#menu li {
+    box-shadow: 0px 2px 5px 0px rgba(0,52,102,0.11) !important;
+    border-radius: 10px;
+    margin-top: 10px;
 }
 
 // blog grid

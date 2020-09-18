@@ -529,7 +529,7 @@ pre > code.diff-highlight .token.inserted:not(.prefix) {
 }
 
 .logo-text {
-	font-size: 40px;
+	font-size: 28px;
 	letter-spacing: -3px;
     font-weight: bold;
 }
@@ -661,7 +661,7 @@ a.amzn-buy:hover {
 }
 
 @media (max-width: 420px) {
-	#menu li:hover {
+	#menu ul li {
 		width: calc(100vw - 60px);
 	}
 }
