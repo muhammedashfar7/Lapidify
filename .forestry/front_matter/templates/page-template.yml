@@ -1,4 +1,47 @@
 ---
 label: Page Template
 hide_body: false
-fields: []
+fields:
+- name: layout
+  type: text
+  config:
+    required: false
+  label: Layout
+  description: "<strong>Layout </strong>of the page."
+  hidden: true
+  default: page
+- name: date
+  type: datetime
+  label: Date
+  description: "<strong>Date</strong> of creating the page."
+  config:
+    required: true
+    date_format: 
+    time_format: 
+    display_utc: true
+- name: title
+  type: text
+  config:
+    required: true
+  label: Title
+  description: "<strong>Title </strong>of the page."
+- name: image
+  type: file
+  config:
+    maxSize: 64
+  label: Featured image
+  description: Upload the <strong>featured image</strong>.
+- name: imageshadow
+  type: boolean
+  label: Image Shadow
+  default: false
+- name: comments
+  type: boolean
+  label: Comments
+  default: true
+- name: permalink
+  type: text
+  config:
+    required: false
+  label: Permalink
+  description: Add your <strong>permalink </strong>of the page.
