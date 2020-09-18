@@ -44,3 +44,5 @@ fields:
       format: markdown
   label: body
   description: Enter the <strong>description</strong> the book.
+pages:
+- _books/the-merchant-of-venice.md
