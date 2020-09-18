@@ -16,6 +16,5 @@ body: "**The Merchant of Venice** is perhaps most associated not with its titula
   father/daughter relations, the power of money and the forceful character of Portia,
   to offer readers an energetic, original and revelatory reading of this challenging
   play."
-published: false
 
 ---
