@@ -39,3 +39,5 @@ Before start writing you should check that your profile is created in author tab
 
 1. Find **posts** from the sidebar.![](/uploads/tempsnip3-1.png)
 2. Tap on **New Post** from the topbar.![](/uploads/tempsnip4.png)
+3. **Strings** in post window.
+   * 
