@@ -25,12 +25,6 @@ fields:
     required: true
   label: Title
   description: "<strong>Title </strong>of the page."
-- name: image
-  type: file
-  config:
-    maxSize: 64
-  label: Featured image
-  description: Upload the <strong>featured image</strong>.
 - name: imageshadow
   type: boolean
   label: Image Shadow
