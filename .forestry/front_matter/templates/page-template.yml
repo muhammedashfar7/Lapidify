@@ -55,3 +55,5 @@ fields:
       format: markdown
   label: body
   description: Add your text here.
+pages:
+- writer-s-guide.md
