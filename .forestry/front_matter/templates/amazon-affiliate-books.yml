@@ -45,5 +45,6 @@ fields:
   label: body
   description: Enter the <strong>description</strong> the book.
 pages:
+- _books/macbeth.md
 - _books/the-merchant-of-venice.md
 - _books/the-tempest.md
