@@ -8,7 +8,6 @@ imageshadow: false
 permalink: "/writers-guide"
 body: ''
 description: A begining guide for writers.
-published: false
 
 ---
 Before start blogging in **Lapidify**, please read the following **Writer's guide**.
