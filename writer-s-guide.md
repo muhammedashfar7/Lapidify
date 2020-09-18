@@ -21,7 +21,7 @@ The fields with **optional** on the status bar are optional and not compulsory t
 
 Before start writing you should check that your profile is created in author tab. Otherwise create new.
 
-1. **Select the author tab from the sidebar.![](/uploads/tempsnip1.png)**
+1. Select the **authors tab** from the sidebar.**![](/uploads/tempsnip1-1.png)**
 2. Then in the top tap on **New Author** and create one.![](/uploads/tempsnip2.png)
 3. Before adding your details please read the following usage of strings.
    * **Shortname :** Enter your name or nickname in small letters. This field is used to identify your profile in the post.
@@ -34,3 +34,10 @@ Before start writing you should check that your profile is created in author tab
    * **Twitter Link :** Enter your Twitter profile link. _(optional)_
    * **About you :** Enter your bio. _(optional)_
 4. **Save your profile**. For saving see [saving guide](#saving-guide "saving guide").
+
+## **Adding a Post.**
+
+1. Find **posts** from the sidebar.![](/uploads/tempsnip3-1.png)
+2. Tap on **New Post** from the topbar.![](/uploads/tempsnip4.png)
+3. **Strings** in post window.
+   * 
