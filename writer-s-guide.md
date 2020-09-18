@@ -22,4 +22,5 @@ The fields with **optional** on the status bar are optional and not compulsory t
 Before start writing you should check that your profile is created in author tab. Otherwise create new.
 
 1. **Select the author tab from the sidebar.![](/uploads/tempsnip1.png)**
-2. Then in the top tap on **New Author** and create one.
+2. Then in the top tap on **New Author** and create one.![](/uploads/tempsnip2.png)
+3. 
