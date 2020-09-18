@@ -25,7 +25,7 @@ collections:
         name: "display_name"
         widget: "string"
         required: true
-        hint: "Ex: John Doe"e
+        hint: "Ex: John Doe"
       - label: "Background color"
         name: "bg_color"
         widget: "string"
