@@ -5,18 +5,42 @@ fields:
 - type: text
   name: identify
   label: identify
+  description: Unique <strong>identifier </strong>for the book.
 - type: text
   name: title
   label: title
+  description: "<strong>Title</strong> of the book."
+  config:
+    required: true
 - type: number
   name: actual-price
   label: actual-price
+  description: The <strong>Actual price</strong> of the book.
 - type: number
   name: price
   label: price
+  description: "<strong>Amazon price</strong> of the book."
+  config:
+    required: true
 - type: file
   name: image
   label: image
+  description: "<strong>Cover image</strong> of the book."
+  config:
+    maxSize: 3
 - type: text
   name: link
   label: link
+  description: "<strong>Amazon affiliate</strong> link of the book."
+  config:
+    required: true
+- name: body
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: body
+  description: Enter the <strong>description</strong> the book.
