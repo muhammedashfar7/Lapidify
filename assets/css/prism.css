@@ -600,10 +600,46 @@ a.amzn-buy:hover {
     font-size: 19px;
 }
 
+.lapidify {
+    background: #ccc;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.lap-heading {
+    font-size: 25px;
+    font-weight: 800;
+    display: block;
+}
+
+.lap-description {
+    display: block;
+}
+
+.lap-button {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+	border-radius: 10px;
+	font-weight: 700;
+}
+
+a.lap-button {
+    text-decoration: none;
+}
+a.lap-button:hover {
+    text-decoration: none;
+}
+
 /* Responcive */
 @media (min-width: 1000px) {
 	.h-index {
 		height: 350px !important;
+	}
+	.lapidify-body {
+		min-height: 140px;
 	}
 }
 

@@ -15,7 +15,7 @@ disqus: demowebsite
 include:
   - _pages
 logo: assets/images/logo.png
-mailchimp-list: https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b
+mailchimp-list: ''
 adsense:
   status: disabled
   adsense-data-ad-client: ca-pub-3412143450191416
@@ -36,6 +36,8 @@ collections:
   category:
     output: true
   books:
+    output: true
+  lapidify:
     output: true
 jekyll-archives:
   enabled:

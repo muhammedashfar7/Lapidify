@@ -46,10 +46,17 @@ title: Home
 <span class="index-subheading">Explore our categories for awesome contents.</span>
 <div class="blog-grid-container owl-carousel owl-theme category-section">
     {% for category in site.category %}
-    <div class="category-index" style="background: #{{category.bg_color}};color: #{{category.color}};">
-        <span class="category-name">
-            {{category.display_name}}
-        </span>
-    </div>
+    {% include category.html %}
     {% endfor %}
 </div>
+
+<!-- lapidify Specials
+================================================== -->
+<span class="index-heading">Lapidify Feed</span>
+<span class="index-subheading">Explore our offers and other services.</span>
+<div class="blog-grid-container">
+    {% for lapidify in site.lapidify %}
+    {% include lapidify.html %}
+    {% endfor %}
+</div>
+
