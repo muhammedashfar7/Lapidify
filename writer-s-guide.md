@@ -23,4 +23,8 @@ Before start writing you should check that your profile is created in author tab
 
 1. **Select the author tab from the sidebar.![](/uploads/tempsnip1.png)**
 2. Then in the top tap on **New Author** and create one.![](/uploads/tempsnip2.png)
-3. 
+3. Before adding your details please read the following usage of strings.
+   * **Shortname :** Enter your name or nickname in small letters. This field is used to identify your profile in the post.
+   * **Display Name :** Enter the name you want to see on our site.
+   * **Avatar :** Upload your profile photo.
+   * 
