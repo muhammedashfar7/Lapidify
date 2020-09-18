@@ -211,6 +211,7 @@ img, img:hover {
         li {
             list-style: none;
             padding: 10px;
+            display: flex;
             a {
                 width: 100%;
                 display: inline-block;
@@ -220,6 +221,7 @@ img, img:hover {
                 font-weight: 400;
                 font-size: 18px;
                 position: relative;
+                margin-left: 10px;
             }
         }
     }
@@ -610,7 +612,6 @@ body.active-side {
     margin-top:120px;
     padding:30px;
     font-size:15px;
-    background:#fff;
     position: relative;
 }
 

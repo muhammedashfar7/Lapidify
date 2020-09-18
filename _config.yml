@@ -35,16 +35,33 @@ collections:
     output: true
   category:
     output: true
+    permalink: /category/:name
   books:
     output: true
+    permalink: /books/:title
   lapidify:
     output: true
+
+# defaults
+defaults:
+  # all book
+  - scope:
+      path: ""
+      type: "books"
+    values:
+      layout: "book"
+  # all category
+  - scope:
+      path: ""
+      type: "category"
+    values:
+      layout: "category"
 jekyll-archives:
   enabled:
     - categories
   layout: archive
   permalinks:
-    category: /category/:name/
+    category: /cat/:name/
 kramdown:
   syntax_highlighter_opts:
     disable: true

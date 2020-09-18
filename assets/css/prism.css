@@ -633,6 +633,11 @@ a.lap-button:hover {
     text-decoration: none;
 }
 
+.featured-image {
+    border-radius: 15px;
+}
+
+
 /* Responcive */
 @media (min-width: 1000px) {
 	.h-index {

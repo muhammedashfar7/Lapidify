@@ -35,7 +35,7 @@ ga('send', 'pageview');
 {% endif %}
 
 {% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
-<body>
+<body {% if page.bg_color %}style="background: linear-gradient(to right bottom, #{{page.bg_color}} 0%, #fff 100%);"{% endif %}>
 	<!-- defer loading of font and font awesome -->
 	<noscript id="deferred-styles">
 		<link href="https://fonts.googleapis.com/css?family=Sen:400,700&display=swap" rel="stylesheet">
