@@ -1,0 +1,16 @@
+---
+label: Category Template
+hide_body: true
+fields:
+- type: text
+  name: name
+  label: name
+- type: text
+  name: display_name
+  label: display_name
+- type: text
+  name: bg_color
+  label: bg_color
+- type: text
+  name: color
+  label: color
