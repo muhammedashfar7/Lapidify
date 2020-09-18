@@ -45,7 +45,7 @@ fields:
     required: false
   label: Permalink
   description: Add your <strong>permalink </strong>of the page.
-- name: body
+- name: description
   type: textarea
   default: ''
   config:
@@ -53,7 +53,8 @@ fields:
     wysiwyg: false
     schema:
       format: markdown
-  label: body
-  description: Add your text here.
+  label: Description
+  description: Add your <strong>description </strong>of the page. Indexed by <strong>search
+    engine</strong>.
 pages:
 - writer-s-guide.md
