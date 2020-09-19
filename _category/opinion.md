@@ -1,6 +1,6 @@
 ---
 name: opinions
-display_name: Opinions
+display_name: 🤓 Opinions
 bg_color: ffeefd
 color: ff7cf7
 

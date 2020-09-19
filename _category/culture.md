@@ -1,6 +1,6 @@
 ---
 name: culture
-display_name: Culture
+display_name: 🎃 Culture
 bg_color: faffee
 color: fff17c
 

@@ -1,6 +1,6 @@
 ---
 name: nature
-display_name: Nature
+display_name: 🌲 Nature
 bg_color: fff3ee
 color: ffa77c
 

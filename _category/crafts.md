@@ -1,6 +1,6 @@
 ---
 name: craft
-display_name: Craft
+display_name: 🧨 Craft
 bg_color: efe
 color: 93ff7c
 

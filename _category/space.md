@@ -1,6 +1,6 @@
 ---
 name: space
-display_name: Space
+display_name: 🚀 Space
 bg_color: efeeff
 color: 7c90ff
 

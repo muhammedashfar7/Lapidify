@@ -5,7 +5,7 @@ title: Home
 
 <!-- Recent Posts
 ================================================== -->
-<span class="index-heading">Recent Posts</span>
+<span class="index-heading">💡 Recent Posts</span>
 <span class="more-icon">
     <a href="{{site.baseurl}}/blog">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
@@ -22,9 +22,55 @@ title: Home
     {% endfor %}
 </div>
 
+<!-- Videos
+================================================== -->
+<span class="index-heading">📺 Videos</span>
+<span class="index-subheading">Explanatory videos</span>
+<div class="blog-grid-container owl-carousel owl-theme video-section">
+    <div class="video-main">
+        <div class="video-thumbnail" style="background: url(/assets/images/1.jpg);background-size: cover;background-position: center;">
+            <span class="video-category">Science</span>
+            <span class="video-details">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-play-circle"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg>
+                <span class="video-title">Demo video title</span>
+                <span class="video-date">26th jan 2020</span>
+            </span>
+        </div>
+    </div>
+</div>
+<!-- Science
+================================================== -->
+<span class="index-heading">🎯 Science</span>
+<span class="index-subheading">Explore the latest in science.</span>
+<div class="blog-grid-container owl-carousel owl-theme index-page">
+    {% assign filtered_posts_action = site.posts | where: 'category', "science" | where_exp:"post","post.is_generated != true" %}
+    {% for post in filtered_posts_action %}
+    {% include postbox-index.html %}
+    {% endfor %}
+</div>
+
+<!-- Categories
+================================================== -->
+<span class="index-heading">📂 Categories</span>
+<span class="index-subheading">Explore our categories for awesome contents.</span>
+<div class="blog-grid-container owl-carousel owl-theme category-section">
+    {% for category in site.category %}
+    {% include category.html %}
+    {% endfor %}
+</div>
+
+<!-- Facts
+================================================== -->
+<span class="index-heading">🤪 Crazy Facts</span>
+<span class="index-subheading">Explanatory videos</span>
+<div class="blog-grid-container owl-carousel owl-theme crazy-facts-section">
+    {% for category in site.category %}
+    {% include category.html %}
+    {% endfor %}
+</div>
 <!-- Recommended Books
 ================================================== -->
-<span class="index-heading">Suggested Books</span>
+<span class="index-heading">📚 Suggested Books</span>
 <span class="more-icon">
     <a href="{{site.baseurl}}/blog">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
@@ -37,16 +83,6 @@ title: Home
 <div class="blog-grid-container owl-carousel owl-theme book-section">
     {% for book in site.books limit:5 %}
     {% include amzn-book.html %}
-    {% endfor %}
-</div>
-
-<!-- Categories
-================================================== -->
-<span class="index-heading">Categories</span>
-<span class="index-subheading">Explore our categories for awesome contents.</span>
-<div class="blog-grid-container owl-carousel owl-theme category-section">
-    {% for category in site.category %}
-    {% include category.html %}
     {% endfor %}
 </div>
 

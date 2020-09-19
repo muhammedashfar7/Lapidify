@@ -1,6 +1,6 @@
 ---
 name: food
-display_name: Food
+display_name: 🥪 Food
 bg_color: eefffd
 color: 7cffe6
 

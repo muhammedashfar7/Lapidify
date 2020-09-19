@@ -3,7 +3,7 @@
 {% assign category = site.category | where: "name", post.category | first %}
 
 <div class="blog-grid-item">
-    <div class="card h-100 {{category.name}}" style="background: linear-gradient(to bottom, #{{category.bg_color}} 0%, #fff 100%);">
+    <div class="post-shadow-category card h-100 {{category.name}}" style="background: linear-gradient(to bottom, #{{category.bg_color}} 0%, #fff 100%);">
         <div class="card-body">
             {% if post.category %}
             <span class="category {{category.name}}" style="background: #{{category.color}};">{{ category.display_name }}</span>
