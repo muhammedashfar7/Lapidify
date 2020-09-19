@@ -133,9 +133,10 @@ collections:
         name: "tags"
         widget: "list"
         hint: "Each tag is separated with comma."
-      - label: "Post Image"
+      - label: "Featured Image"
         name: "image"
         widget: "image"
+        required: false
         hint: "Try to add optimised image below 1MB. Make site load faster."
       - label: "Description"
         name: "description"
