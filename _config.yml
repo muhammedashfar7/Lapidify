@@ -43,6 +43,8 @@ collections:
     output: true
   videos:
     output: true
+  facts:
+    output: true
 
 # defaults
 defaults:

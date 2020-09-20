@@ -27,7 +27,7 @@ title: Home
 <span class="index-heading">📺 Videos</span>
 <span class="index-subheading">Explanatory videos</span>
 <div class="blog-grid-container owl-carousel owl-theme video-section">
-    {% for video in site.videos %}
+    {% for video in site.videos limit:6 %}
     {% include videobox.html %}
     {% endfor %}
 </div>
@@ -37,7 +37,7 @@ title: Home
 <span class="index-subheading">Explore the latest in science.</span>
 <div class="blog-grid-container owl-carousel owl-theme index-page">
     {% assign filtered_posts_action = site.posts | where: 'category', "science" | where_exp:"post","post.is_generated != true" %}
-    {% for post in filtered_posts_action %}
+    {% for post in filtered_posts_action limit:5 %}
     {% include postbox-index.html %}
     {% endfor %}
 </div>
@@ -55,14 +55,13 @@ title: Home
 <!-- Facts
 ================================================== -->
 <span class="index-heading">🤪 Crazy Facts</span>
-<span class="index-subheading">Explanatory videos</span>
+<span class="index-subheading">Some crazy things happening on Earth</span>
 <div class="blog-grid-container owl-carousel owl-theme crazy-facts-section">
-   <div class="crazy-facts">
-       <span class="fact-text">
-           the best thing in the development of any thing is the will to do that.
-       </span>
-   </div>
+   {% for fact in site.facts limit:5 %}
+   {% include facts.html %}
+   {% endfor %}
 </div>
+
 <!-- Recommended Books
 ================================================== -->
 <span class="index-heading">📚 Suggested Books</span>
@@ -76,7 +75,7 @@ title: Home
 </span>
 <span class="index-subheading">Sponcered by Amazon India.</span>
 <div class="blog-grid-container owl-carousel owl-theme book-section">
-    {% for book in site.books limit:5 %}
+    {% for book in site.books limit:8 %}
     {% include amzn-book.html %}
     {% endfor %}
 </div>

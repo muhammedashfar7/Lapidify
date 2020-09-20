@@ -4,6 +4,8 @@ backend:
 
 publish_mode: editorial_workflow
 
+local_backend: true
+
 media_folder: "assets/images"
 collections:
   - label: "Category"
@@ -90,6 +92,39 @@ collections:
         name: "description"
         widget: "text"
         required: false
+  - label: "Facts"
+    name: "facts"
+    folder: "_facts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    editor:
+      preview: false
+      delete: false
+    fields:
+      - label: "Fact No"
+        name: "fact_no"
+        widget: "number"
+        value_type: "float"
+        step: 1
+        required: true
+        hint: "Ex: 1"
+      - label: "Title"
+        name: "title"
+        widget: "string"
+        required: true
+        hint: "Ex: What the fact about?"
+      - label: "Category"
+        name: "category"
+        widget: "relation"
+        collection: "category"
+        searchFields: [display_name]
+        displayFields: [display_name]
+        valueField: "name"
+        required: true
+        hint: "Ex: ff63ff"
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
   - label: "Posts"
     name: "posts"
     folder: "_posts"

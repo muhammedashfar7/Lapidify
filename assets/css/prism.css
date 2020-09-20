@@ -476,7 +476,7 @@ pre > code.diff-highlight .token.inserted:not(.prefix) {
 /* Custom CSS */
 .category {
     background: #bcffbc;
-    padding: 1px 10px;
+    padding: 2px 10px;
     border-radius: 10px;
     font-size: 13px;
 }
@@ -689,7 +689,8 @@ a.lap-button:hover {
 .crazy-facts {
     background: #ccc;
     padding: 20px;
-    border-radius: 15px;
+	border-radius: 15px;
+	height: 250px;
 }
 
 .zoom:hover {
@@ -749,6 +750,9 @@ a.lap-button:hover {
 	}
 	.category-name{
 		font-size: 17px;
+	}
+	.crazy-facts {
+		height: 270px;
 	}
 }
 
