@@ -41,6 +41,8 @@ collections:
     permalink: /books/:title
   lapidify:
     output: true
+  videos:
+    output: true
 
 # defaults
 defaults:

@@ -681,12 +681,20 @@ a.lap-button:hover {
     position: absolute;
     left: 10px;
     top: 20px;
-    background: #ccc;
     font-size: 12px;
     padding: 0px 10px;
     border-radius: 15px;
 }
 
+.crazy-facts {
+    background: #ccc;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.zoom:hover {
+    transform: scale(1.5);
+}
 /* Responcive */
 @media (min-width: 1000px) {
 	.h-index {
