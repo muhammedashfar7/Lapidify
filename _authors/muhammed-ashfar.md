@@ -5,5 +5,6 @@ avatar: /assets/images/avatar.png
 insta_username: muhammedashfar_
 email: muhammed.ashfar.7@gmail.com
 web: https://muhd.tk
+insta: muhammedashfar_
 description: Hi, I am Muhammed Ashfar.
 ---
