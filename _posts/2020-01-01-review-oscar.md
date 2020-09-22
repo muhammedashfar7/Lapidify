@@ -1,13 +1,17 @@
 ---
+title: Reviewing the best Oscar movies of all time
+date: 2020-01-01 00:00:00 Z
+categories:
+- Lifestyle
+- technology
+tags:
+- Movies
 layout: post
-title:  "Reviewing the best Oscar movies of all time"
 author: john
-categories: [ Lifestyle ]
-tags: [Movies]
-image: /assets/images/11.jpg
-description: "My review of Inception movie. Acting, plot and something else in this short description."
+image: "/assets/images/11.jpg"
+description: My review of Inception movie. Acting, plot and something else in this
+  short description.
 rating: 4.5
-category: technology
 ---
 
 Review products, books, movies, restaurant and anything you like on your Jekyll blog with **Memoirs**! JSON-LD ready for review property.

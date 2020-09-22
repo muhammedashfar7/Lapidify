@@ -1,107 +1,125 @@
+---
+title: Memoirs
+timezone: UTC
+collections:
+  authors:
+    title: Authors
+    output: true
+  books:
+    title: Books
+    output: true
+    permalink: "/books/:title"
+  category:
+    title: Category
+    output: true
+    permalink: "/category/:name"
+  facts:
+    title: Facts
+    output: true
+  lapidify:
+    title: Lapidify
+    output: true
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+  videos:
+    title: Videos
+    output: true
+defaults:
+- scope:
+    path: ''
+    type: books
+  values:
+    layout: book
+- scope:
+    path: ''
+    type: category
+  values:
+    layout: category
 google_analytics: UA-xxxxxxxx-1
 authorbox: disabled
 plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-feed
-  - jekyll-seo-tag
-  - jekyll-archives
-  - jekyll-figure
+- jekyll-paginate
+- jekyll-sitemap
+- jekyll-feed
+- jekyll-seo-tag
+- jekyll-archives
+- jekyll-figure
 highlighter: none
 name: Lapidify
-description: We take you to the awesome world of knowledge. Read contents from almost all ypur favorite topics including science, atheisim, facts etc. Enjoy!
-baseurl: ""
+description: We take you to the awesome world of knowledge. Read contents from almost
+  all ypur favorite topics including science, atheisim, facts etc. Enjoy!
+baseurl: ''
 disqus: demowebsite
 include:
-  - _pages
+- _pages
 logo: assets/images/logo.png
 mailchimp-list: ''
 adsense:
   status: disabled
   adsense-data-ad-client: ca-pub-3412143450191416
-  adsense-data-ad-slot: "1363087678"
-permalink: /:title/
+  adsense-data-ad-slot: '1363087678'
+permalink: "/:title/"
 email: wowthemesnet@gmail.com
 lazyimages: disabled
-paginate_path: /blog/page:num/
+paginate_path: "/blog/page:num/"
 sass:
   sass_dir: _sass
   style: compressed
 markdown: kramdown
-title: Memoirs
 favicon: assets/images/logo.png
-collections:
-  authors:
-    output: true
-  category:
-    output: true
-    permalink: /category/:name
-  books:
-    output: true
-    permalink: /books/:title
-  lapidify:
-    output: true
-  videos:
-    output: true
-  facts:
-    output: true
-
-# defaults
-defaults:
-  # all book
-  - scope:
-      path: ""
-      type: "books"
-    values:
-      layout: "book"
-  # all category
-  - scope:
-      path: ""
-      type: "category"
-    values:
-      layout: "category"
 jekyll-archives:
   enabled:
-    - categories
+  - categories
   layout: archive
   permalinks:
-    category: /cat/:name/
+    category: "/cat/:name/"
 kramdown:
   syntax_highlighter_opts:
     disable: true
 paginate: 6
 exclude:
-  - changelog.md
-  - LICENSE.txt
-  - README.md
-  - Gemfile
-  - Gemfile.lock
+- changelog.md
+- LICENSE.txt
+- README.md
+- Gemfile
+- Gemfile.lock
 menu:
-  - title: Home
-    url: /
-    badge: ""
-    subheading: With Quick look at recent posts, books etc.
-    color: ffce7c
-    svg-class: feather feather-grid
-    svg: <rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect>
-  - title: Categories
-    url: /categories
-    badge: ""
-    subheading: The top and best categories of ours.
-    color: ff7cad
-    class: feather feather-layers
-    svg: <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline>
-  - title: Tags
-    url: /tags
-    badge: New
-    subheading: Let's Explore some popular tags.
-    color: 7cffc8
-    svg-class: feather feather-layers
-    svg: <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline>
-  - title: Contact
-    url: /contact
-    badge: ""
-    subheading: Us for help and content request.
-    color: 7cdaff
-    svg-class: feather feather-headphones
-    svg: <path d="M3 18v-6a9 9 0 0 1 18 0v6"></path><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path>
+- title: Home
+  url: "/"
+  badge: ''
+  subheading: With Quick look at recent posts, books etc.
+  color: ffce7c
+  svg-class: feather feather-grid
+  svg: <rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7"
+    height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3"
+    y="14" width="7" height="7"></rect>
+- title: Categories
+  url: "/categories"
+  badge: ''
+  subheading: The top and best categories of ours.
+  color: ff7cad
+  class: feather feather-layers
+  svg: <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17
+    12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline>
+- title: Tags
+  url: "/tags"
+  badge: New
+  subheading: Let's Explore some popular tags.
+  color: 7cffc8
+  svg-class: feather feather-layers
+  svg: <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline
+    points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line
+    x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline>
+- title: Contact
+  url: "/contact"
+  badge: ''
+  subheading: Us for help and content request.
+  color: 7cdaff
+  svg-class: feather feather-headphones
+  svg: <path d="M3 18v-6a9 9 0 0 1 18 0v6"></path><path d="M21 19a2 2 0 0 1-2 2h-1a2
+    2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0
+    0-2-2H3z"></path>
